@@ -44,12 +44,13 @@
 }
 
 h5.product-rating {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .add-to-cart {
     background: #FFE0B3;
     border: 0;
+    padding: 14px 0px;
     border-top: 1px solid #95A0A7;
     border-radius: 0px 0px 8px 8px;
     width: 100%;
