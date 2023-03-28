@@ -10,6 +10,9 @@
     gap: 45px;
 }
 
-.orderSummaryContainer {
+.cartContainer {
     background: rgba(255, 153, 0, 0.3);
+    position: sticky;
+    top: 10%;
+    height: 500px;
 }
