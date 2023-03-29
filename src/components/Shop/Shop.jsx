@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { addToLocalStorage, getShoppingCart } from '../../utilities/addToLocalStorage';
 import Cart from '../Cart/Cart';
-import Order from '../Cart/Cart';
 import Product from '../Product/Product';
 
 import './Shop.css';
@@ -17,9 +17,16 @@ const Shop = () => {
     }
     , []);
 
+    useEffect( () => {
+        const localCart =  getShoppingCart();
+        console.log(localCart);
+    }
+    , []);
+
     const handleAddToCart = (product) => {
         const newCart = [...cart, product];
         setCart(newCart);
+        addToLocalStorage(product.id);
     }
 
     return (
