@@ -40,7 +40,7 @@ const Shop = () => {
             // Step 5: Finally, Change the cart state 
             setCart(savedCart);
 
-            console.log('added product, ', addedProduct);
+            // console.log('added product, ', addedProduct);
 
         }
 
